@@ -1,0 +1,25 @@
+
+<link rel="stylesheet" href="./msms-data-table.component.css">
+<body>
+<div class="table-container">
+    <img src="assets/images/logo.png" width="300" height="150">
+    <table>
+        <h2>Currently Married Women belonging to Scheduled Tribes by Present Age and Births during Last Year by Birth order for Tirunelveli Kattabomman District of Tamil Nadu, 2023</h2>
+      <thead>
+        <tr>
+          <th>District_Name</th>
+          <th>Tribe_Category</th>
+          <th>Present_Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of this.data">
+            
+          <td>{{ item.district_name }}</td>
+          <td>{{ item.tribe_category }}</td>
+          <td>{{ item.present_age }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
